@@ -1,0 +1,109 @@
+.cover {
+    padding-top: 136px;
+    .container {
+        position: relative;
+    }
+    .slick-track {
+        display: flex;
+        flex-direction: column;
+    }
+    .slick-list {
+        overflow: hidden;
+    }
+    .slick-dots {
+        position: absolute;
+        right: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        li {
+            font-size: 0;   
+        }
+        .slick-active {
+            button {
+                background: #fff;
+            }
+        }
+        button {
+            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+            background: transparent;
+            font-size: 0;
+            min-width: 10px !important;
+            height: 10px;
+            margin: 0;
+            padding: 0;
+            border-radius: 10px;
+            border: none;
+        }
+    }
+    &__offer {
+        background-color: #C6CAD2;
+        border-radius: 20px;
+        background-image: url('https://s3-alpha-sig.figma.com/img/e31e/67b5/c9ece2acbffde6ddecd26bf6bb72a938?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Zr5Qun4tS2~QaYh4YI751gZJeKrmqEOeMN560xCXdGJ65Z9e4~olr6Rjsx8AIRKIKs8pcE8JBxQxfKa6FOvWp-8yyWCCxbg~4jT5GMIVTmEhivTRYPmQIBOY1LZTZsj1GjUTQRmKwOj7Gu5jDBWy~oi0iuLOyN93uscghcek8U3RkpiopdnSYmxMsGNwUWHhOWk~uDZB-ffNX7q3Cg8ybpGwWWJ2DX90SOJdtIGFFxAAu9TC~yHBg1GEcDAT~pmPXD08HjPeh5UzennrRSiZUk~8yHa4ps2cBs-cwull35UpD~6tsCs2RUGQmKG87ykxqcELlTrrM4hxE0VOdmdk1g__');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0;
+        height: 502px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 12px 0;
+    }
+    &__title {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 44px;
+    }
+    .button-base {
+        position: relative;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: -12px;
+    }
+    .ytb {
+        position: absolute;
+        left: 50px;
+        bottom: 45px;
+        background: #DE290F;
+        width: 60px;
+        height: 60px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        &:hover {
+            box-shadow: none;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        &__title {
+            font-size: 26px;
+        }
+        &__offer {
+            height: 366px;
+        }
+        .slick-dots {
+            display: none !important;
+        }
+        .button-base {
+            left: inherit;
+            transform: inherit;
+            text-align: right;
+            top: inherit;
+            bottom: -12px;
+            right: 14px;
+            position: absolute;
+            padding: 14px 26px;
+        }
+        .ytb {
+            height: 50px;
+            width: 50px;
+            left: 14px;
+            bottom: -14px;
+        }
+    }
+}

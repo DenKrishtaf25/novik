@@ -1,0 +1,28 @@
+<section 
+    class="products block"
+    style="--primary-color: @@primaryColor;"
+>
+    <div class="container">
+       <div class="products__wrapper block-shadow">
+            <h2 class="products__title">
+                @@title
+            </h2>
+            <p class="products__txt">
+                @@text
+            </p>  
+        </div>
+        <div class="products__img">
+            <img src="@@img" alt="">
+        </div>
+        <p class="products__txt mob">
+            @@text
+        </p> 
+        <div class="products__btns">
+            <a href="#" class="btn btn-color">Рассчитать стоимость</a>
+            <a href="#" class="btn btn-trans">Смотреть цены</a>
+        </div>
+        @@include('../components/popularProducts/index.html', {
+            "name": "@@name",
+        })
+    </div>
+</section>

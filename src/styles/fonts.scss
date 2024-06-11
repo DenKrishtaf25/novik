@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Gogh';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gogh-Regular'), url('./fonts/Gogh-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gogh';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Gogh-Medium'), url('./fonts/Gogh-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gogh';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Gogh-Bold'), url('./fonts/Gogh-Bold.ttf') format('truetype');
+}

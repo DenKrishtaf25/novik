@@ -1,0 +1,19 @@
+<section class="subsequence block">
+    <div class="container">
+        <div class="subsequence__wrapper block-shadow">
+            <h2 class="subsequence__title">
+                Как купить автомобиль
+            </h2>
+            <div class="subsequence__content">
+                @@loop("../components/subsequenceCard.html", "data/roadMapCards.json")
+            </div>
+
+            <h2 class="subsequence__title">
+                Преимущества работы с нами
+            </h2>
+            <div class="subsequence__content">
+                @@loop("../components/subsequenceCard.html", "data/causeCards.json")
+            </div>
+        </div>
+    </div>
+</section>

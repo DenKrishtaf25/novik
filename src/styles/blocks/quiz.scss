@@ -1,0 +1,37 @@
+.quiz {
+    &__wrapper {
+        padding: 42px 50px 54px;
+        height: 460px;
+        background: #EDF3FF;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url(../../images/quiz.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right, top;
+    }
+    &__title {
+        text-align: left;
+        max-width: 706px;
+        text-transform: uppercase;
+    }
+    @media screen and (max-width: 575px) {
+        padding-top: 116px !important;
+        &__wrapper {
+            background: none;
+            padding: 0;
+            box-shadow: none !important;
+            background-image: url(../../images/quiz-mob.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top, right;
+            align-items: center;
+            height: 328px;
+        }
+        .button-base {
+            width: 100%;
+        }
+    }
+}
