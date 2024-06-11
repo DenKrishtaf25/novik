@@ -1,0 +1,44 @@
+.popular-products {
+    padding: 20px 16px;
+    margin: 0 32px;
+    border-radius: 20px;
+    background-color: #fff;
+    .slick-track {
+        display: flex;
+        gap: 20px;
+    }
+    .slick-list {
+        overflow: hidden;
+    }
+    .slick-slide {
+        width: 232px !important;
+    }
+    &__slider {
+        position: relative;
+    }
+    .arr {
+        background: var(--primary-color);
+        width: 46px;
+        height: 46px;
+        border-radius: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        z-index: 3;
+        cursor: pointer;
+        transition: 0.3s;
+        opacity: 1;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    .arr-l {
+        left: -40px;
+    }
+    .arr-r {
+        right: -40px;
+    }
+}

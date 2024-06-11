@@ -1,0 +1,30 @@
+.car {
+    .slick-track {
+        display: flex;
+    }
+    .slick-list {
+        overflow: hidden;
+    }
+    .gallery-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .main-slider {
+        margin-bottom: 20px;
+    }
+    .main-slider img {
+        width: 100%;
+    }
+    .thumbnail-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+    }
+    .thumbnail-grid img {
+        cursor: pointer;
+        width: 100%;
+    }
+    .thumbnail-grid img.selected {
+        border: 2px solid #000;
+    }
+}

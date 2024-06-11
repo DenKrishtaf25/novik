@@ -1,0 +1,27 @@
+.subsequence {
+    position: relative;
+    &__wrapper {
+        background: #F9FBFF;
+        padding: 24px 0;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 46px;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 8px;
+        @import "../components/subsequenceCard.scss";
+    }
+    @media screen and (max-width: 575px) {
+        &__wrapper {
+            background: none;
+            box-shadow: none !important;
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

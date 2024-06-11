@@ -1,0 +1,24 @@
+.subsequence-card {
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    img {
+        margin-bottom: 15px;
+        max-height: 100px;
+    }
+    span {
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+    p {
+        line-height: 23px;
+    }
+    @media screen and (max-width: 575px) {
+        img {
+            height: 85px;
+        }
+    }
+}
